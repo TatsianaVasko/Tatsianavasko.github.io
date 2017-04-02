@@ -17,11 +17,11 @@
       <header>
         <h4><b>List of useful links to test HZN and Branded app linkings</b></h4>
        <h5><p>Mobile app proccessed:<br>
-        - Universal deeplink<br>
+        - Universal deeplinks<br>
         - Mobile deeplinks</p></h5>
          
 <h5><p><b>1. Universal deeplinks [App Links]</b><br>
-a - Web deeplink - https://www.horizon.tv/en_ch/tv-guide.html {Android 6.0+} {iOs 9+}<br>
+a - Web deeplinks - https://www.horizon.tv/en_ch/tv-guide.html {Android 6.0+} {iOs 9+}<br>
 [Open immediately app with intent if installed]<br>
 [Fall back to web link if not installed]<br>
 
@@ -29,7 +29,7 @@ a - Web deeplink - https://www.horizon.tv/en_ch/tv-guide.html {Android 6.0+} {iO
 - Deeplinking is implemented in the app;<br>
 - Deeplinks are mapped on Universal links in right way;<br>
 
-b - "Confirm"/"Redirect" link https://www.horizon.tv/dl/ch/tvguide<br>
+b - "Confirm"/"Redirect" deeplinks https://www.horizon.tv/dl/ch/tvguide<br>
 ["Open with ... WEB/app (if installed)" dialog -> "Open app" / "Fall back to web link if not installed"]<br>
       
 <b>Need to be tested to check:</b><br>
@@ -39,14 +39,17 @@ b - "Confirm"/"Redirect" link https://www.horizon.tv/dl/ch/tvguide<br>
 <b>2. Mobile deeplinks</b><br>
 [Open immediately app with intent if installed]<br>
 hgo://nl/tvguide<br>
-Indirectly Mobile deeplinks can be tested by p.1-a </p></h5>
+Indirectly Mobile deeplinks can be tested by p.1-a
+  <b>Need to be tested to check:</b><br>
+- “Redirect” link process correctly via WEB (WEB dialog);<br>
+- “Redirect” link process correctly via the app<br></p></h5>
      
 <p class="view"><a href="https://github.com/TatsianaVasko">View My GitHub Profile</a></p>
 
       </header>
       <section>
    
-  <h5><p>HZN. Mobile deeplinking: hgo://nl/...<br>
+  <h5><p>HZN. Mobile deeplinks: hgo://nl/...<br>
 
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Landing pages<br>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NL<br>
@@ -80,61 +83,58 @@ Indirectly Mobile deeplinks can be tested by p.1-a </p></h5>
 <a href="hgo://ch/tv-guide/replay-asset.html/crid%3A~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-00000000ABD7/3%20auf%20zwei/crid%3A~~2F~~2Fbds.tv~~2F625983816-imi%3A0010000000D47C6E/3%20auf%20zwei">hgo://ch/ Replay item -> should be opened in HZN</a><br>
 <a href="hgo://de/maxdome/tv-asset.html/crid%3A~~2F~~2Funitymedia.de~~2F9381ab8f-ec75-4bf9-b84f-693bcdcd4150/stadt-land-mord/crid%3A~~2F~~2Funitymedia.de~~2F778868131000~~2FMXDSV100000000014399/stadt-land-mord">hgo://de/ Maxdome item -> should be opened in HZN</a></p></h5>
     
-        <h5>Universal links:</h5>
-    <h5>https://www.horizon.tv/nl_nl.html;</h5>
-    <h5>https://www.horizon.tv/dl/nl/...</h5>
+        <h5><p>Universal links:<br>
+        Web deeplinks https://www.horizon.tv/nl_nl.html;><br>
+    "Confirm"/"Redirect" links - https://www.horizon.tv/dl/nl/...<br>
 
 
-  <h5>https://www.horizon.tv/dl/nl/...</h5>
-<p><a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d/season/crid:~~2F~~2Fupc.com~~2F5606bc57-3f78-4eec-9521-fa5ee081a9a0/episode/crid:~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000379026">https://www.horizon.tv/dl/nl/ My prime item -> should be opened in Ziggo</a></p>       
-<p><a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d/season/crid:~~2F~~2Fupc.com~~2F5606bc57-3f78-4eec-9521-fa5ee081a9a0">https://www.horizon.tv/dl/nl/ My prime item-w/o episode -> should be opened in Ziggo</a></p> 
-<p><a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d">https://www.horizon.tv/dl/nl// My prime item-w/o episode-w/o season -> should be opened in Ziggo</a></p>       
-<p><a href="https://www.horizon.tv/dl/nl/watchtv/station/24443942987/program/crid:~~2F~~2Fbds.tv~~2F40995770/listing/crid:~~2F~~2Fbds.tv~~2F229899112-imi:0010000000808F8F">www.horizon.tv/dl/nl/ replay item -> should be opened in Ziggo</a></p>
-<p><a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d/season/crid:~~2F~~2Fupc.com~~2F5606bc57-3f78-4eec-9521-fa5ee081a9a0/episode/crid:~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000379031">https://www.horizon.tv/dl/nl/ Show/my-prime/season/episode  -> should be opened in Ziggo</a><br>
-<p><a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d/season/crid:~~2F~~2Fupc.com~~2F5606bc57-3f78-4eec-9521-fa5ee081a9a0">https://www.horizon.tv/dl/nl/ Show/my-prime/season  -> should be opened in Ziggo</a><br>
-<p><a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d">https://www.horizon.tv/dl/nl/ Show/my-prime  -> should be opened in Ziggo</a><br>
-  
-<p><a href="https://www.horizon.tv/dl/ch/watchtv/station/757231655242/location/21656615412">https://{HOSTNAME}/dl/{COUNTRY}/watchtv/station/{STATION_ID}/location/{LOCATION_ID} Live item CH-FR locale
-  <p><a href="https://www.horizon.tv/dl/ch/watchtv/station/714731047403//location/48323623160">https://{HOSTNAME}/dl/{COUNTRY}/watchtv/station/{STATION_ID}/location/{LOCATION_ID} Live item CH-FR locale
-<p><a href="https://www.horizon.tv/dl/ch/watchtv/station/location/48323623160">https://{HOSTNAME}/dl/{COUNTRY}/watchtv/station/{STATION_ID}/location/{LOCATION_ID} Live item CH-DE locale (not avail fo RF)
+  <b>"Confirm"/"Redirect" link  https://www.horizon.tv/dl/nl/...</b><br>
+<a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d/season/crid:~~2F~~2Fupc.com~~2F5606bc57-3f78-4eec-9521-fa5ee081a9a0/episode/crid:~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000379026">https://www.horizon.tv/dl/nl/ My prime item -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d/season/crid:~~2F~~2Fupc.com~~2F5606bc57-3f78-4eec-9521-fa5ee081a9a0">https://www.horizon.tv/dl/nl/ My prime item-w/o episode -> should be opened in Ziggo</a><br> 
+<a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d">https://www.horizon.tv/dl/nl// My prime item-w/o episode-w/o season -> should be opened in Ziggo</a><br>   
+<a href="https://www.horizon.tv/dl/nl/watchtv/station/24443942987/program/crid:~~2F~~2Fbds.tv~~2F40995770/listing/crid:~~2F~~2Fbds.tv~~2F229899112-imi:0010000000808F8F">www.horizon.tv/dl/nl/ replay item -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d/season/crid:~~2F~~2Fupc.com~~2F5606bc57-3f78-4eec-9521-fa5ee081a9a0/episode/crid:~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000379031">https://www.horizon.tv/dl/nl/ Show/my-prime/season/episode  -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d/season/crid:~~2F~~2Fupc.com~~2F5606bc57-3f78-4eec-9521-fa5ee081a9a0">https://www.horizon.tv/dl/nl/ Show/my-prime/season  -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F5cf0986e-1370-49c3-ba10-af745f67678d">https://www.horizon.tv/dl/nl/ Show/my-prime  -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/dl/ch/watchtv/station/757231655242/location/21656615412">https://{HOSTNAME}/dl/{COUNTRY}/watchtv/station/{STATION_ID}/location/{LOCATION_ID} Live item CH-FR locale</a><br>
+<a href="https://www.horizon.tv/dl/ch/watchtv/station/714731047403//location/48323623160">https://{HOSTNAME}/dl/{COUNTRY}/watchtv/station/{STATION_ID}/location/{LOCATION_ID} Live item CH-FR locale</a><br>
+<a href="https://www.horizon.tv/dl/ch/watchtv/station/location/48323623160">https://{HOSTNAME}/dl/{COUNTRY}/watchtv/station/{STATION_ID}/location/{LOCATION_ID} Live item CH-DE locale (not avail fo RF)</a><br>
 
+<b>"Confirm"/"Redirect" links https://www.horizon.tv/dl/OTHER COUNTRIES/...</b><br>
+<a href="https://www.horizon.tv/dl/ch/tv-guide/replay-asset.html/crid%3A~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-00000000ABD7/3%20auf%20zwei/crid%3A~~2F~~2Fbds.tv~~2F625983816-imi%3A0010000000D47C6E/3%20auf%20zwei">https://www.horizon.tv/dl/ch/ Replay item -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/dl/at/ondemand/show/crid:~~2F~~2Fupc.com~~2F926b1429-fc6a-4c80-aa68-2abdd5bbbc9f/season/crid:~~2F~~2Fupc.com~~2F66a40b0f-488e-4dae-849c-c2aebf999231/episode/crid:~~2F~~2Fupc.com~~2F2002~~2FBAMP2009000000325300">https://www.horizon.tv/dl/at/ On Demand item -> should be opened in HZN</a><br>
 
- <h5>https://www.horizon.tv/dl/OTHER COUNTRIES/...</h5>
-<p><a href="https://www.horizon.tv/dl/ch/tv-guide/replay-asset.html/crid%3A~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-00000000ABD7/3%20auf%20zwei/crid%3A~~2F~~2Fbds.tv~~2F625983816-imi%3A0010000000D47C6E/3%20auf%20zwei">https://www.horizon.tv/dl/ch/ Replay item -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/dl/at/ondemand/show/crid:~~2F~~2Fupc.com~~2F926b1429-fc6a-4c80-aa68-2abdd5bbbc9f/season/crid:~~2F~~2Fupc.com~~2F66a40b0f-488e-4dae-849c-c2aebf999231/episode/crid:~~2F~~2Fupc.com~~2F2002~~2FBAMP2009000000325300">https://www.horizon.tv/dl/at/ On Demand item -> should be opened in HZN</a></p> 
+<a href="https://www.horizon.tv/dl/ch/home">"https://www.horizon.tv/dl/ch/home -> should be opened in HZN</a><br>  
+<a href="https://www.horizon.tv/dl/ch/myprime">https://www.horizon.tv/dl/ch/myprime -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/dl/ch/ondemand">https://www.horizon.tv/dl/ch/ondemand -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/dl/ch/tvguide">https://www.horizon.tv/dl/ch/tvguide -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/dl/ch/myvideos">https://www.horizon.tv/dl/ch/myvideos -> should be opened in HZN</a><br>    
+<a href="https://www.horizon.tv/dl/ch/watchtv">https://www.horizon.tv/dl/ch/watchtv -> should be opened in HZN</a><br>     
+<a href="https://www.horizon.tv/dl/ch/">https://www.horizon.tv/dl/ch/ without Home -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/dl/ch/watchtv/station/27909159188/program/crid:~~2F~~2Fbds.tv~~2F140941133/listing/crid:~~2F~~2Fbds.tv~~2F140941133-imi:0010000000D9F2F5">https://www.horizon.tv/dl/ch/ TV Guide item -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/dl/ch/myprime/group/crid:~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000392376/item/crid:~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000392376">https://www.horizon.tv/dl/ch/ My prime item -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/dl/ch/myprime/show/crid:~~2F~~2Fupc.com~~2F5a71c353-c6a0-4b81-bc35-78f9c749b42d/season/crid:~~2F~~2Fupc.com~~2F82eaf379-d47f-4cd5-945c-b00258ba592c/episode/crid:~~2F~~2Fupc.com~~2F6006~~2FCDPS2009000000388287">https://www.horizon.tv/dl/ch/ My prime item SHOW -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/dl/ch/myprime/show/crid:~~2F~~2Fupc.com~~2F5a71c353-c6a0-4b81-bc35-78f9c749b42d/season/crid:~~2F~~2Fupc.com~~2F82eaf379-d47f-4cd5-945c-b00258ba592c">https://www.horizon.tv/dl/ch/ My prime item SHOW -epis -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/dl/ch/myprime/show/crid:~~2F~~2Fupc.com~~2F5a71c353-c6a0-4b81-bc35-78f9c749b42d">https://www.horizon.tv/dl/ch/ My prime item SHOW -epis -seas -> should be opened in HZN</a><br>
 
-<p><a href="https://www.horizon.tv/dl/ch/home">"https://www.horizon.tv/dl/ch/home -> should be opened in HZN</a> </p>  
-<p><a href="https://www.horizon.tv/dl/ch/myprime">https://www.horizon.tv/dl/ch/myprime -> should be opened in HZN</a> </p>  
-<p><a href="https://www.horizon.tv/dl/ch/ondemand">https://www.horizon.tv/dl/ch/ondemand -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/dl/ch/tvguide">https://www.horizon.tv/dl/ch/tvguide -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/dl/ch/myvideos">https://www.horizon.tv/dl/ch/myvideos -> should be opened in HZN</a></p>    
-<p><a href="https://www.horizon.tv/dl/ch/watchtv">https://www.horizon.tv/dl/ch/watchtv -> should be opened in HZN</a></p>     
-<p><a href="https://www.horizon.tv/dl/ch/">https://www.horizon.tv/dl/ch/ without Home -> should be opened in HZN</a> </p>
-<p><a href="https://www.horizon.tv/dl/ch/watchtv/station/27909159188/program/crid:~~2F~~2Fbds.tv~~2F140941133/listing/crid:~~2F~~2Fbds.tv~~2F140941133-imi:0010000000D9F2F5">https://www.horizon.tv/dl/ch/ TV Guide item -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/dl/ch/myprime/group/crid:~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000392376/item/crid:~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000392376">https://www.horizon.tv/dl/ch/ My prime item -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/dl/ch/myprime/show/crid:~~2F~~2Fupc.com~~2F5a71c353-c6a0-4b81-bc35-78f9c749b42d/season/crid:~~2F~~2Fupc.com~~2F82eaf379-d47f-4cd5-945c-b00258ba592c/episode/crid:~~2F~~2Fupc.com~~2F6006~~2FCDPS2009000000388287">https://www.horizon.tv/dl/ch/ My prime item SHOW -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/dl/ch/myprime/show/crid:~~2F~~2Fupc.com~~2F5a71c353-c6a0-4b81-bc35-78f9c749b42d/season/crid:~~2F~~2Fupc.com~~2F82eaf379-d47f-4cd5-945c-b00258ba592c">https://www.horizon.tv/dl/ch/ My prime item SHOW -epis -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/dl/ch/myprime/show/crid:~~2F~~2Fupc.com~~2F5a71c353-c6a0-4b81-bc35-78f9c749b42d">https://www.horizon.tv/dl/ch/ My prime item SHOW -epis -seas -> should be opened in HZN</a></p>    
+<b>NL</b><br>
+<a href="https://www.horizon.tv/nl_nl/my-prime.html">My prime NL -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/nl_nl/ondemand.html">On demand NL -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/nl_nl/tv-gids.html">tv-gids NL -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/nl_nl/my-videos.html">my-videos NL -> should be opened in Ziggo</a><br> 
+<a href="https://www.horizon.tv/nl_nl/tv-kijken.html">watch tv NL -> should be opened in Ziggo</a><br>   
+<a href="https://www.horizon.tv/nl_nl.html">home NL -> should be opened in Ziggo</a></p>   
 
-<h5><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NL</h5>
-<p><a href="https://www.horizon.tv/nl_nl/my-prime.html">My prime NL -> should be opened in Ziggo</a></p>
-<p><a href="https://www.horizon.tv/nl_nl/ondemand.html">On demand NL -> should be opened in Ziggo</a></p>
-<p><a href="https://www.horizon.tv/nl_nl/tv-gids.html">tv-gids NL -> should be opened in Ziggo</a></p>
-<p><a href="https://www.horizon.tv/nl_nl/my-videos.html">my-videos NL -> should be opened in Ziggo</a></p> 
-<p><a href="https://www.horizon.tv/nl_nl/tv-kijken.html">watch tv NL -> should be opened in Ziggo</a></p>   
-<p><a href="https://www.horizon.tv/nl_nl.html">home NL -> should be opened in Ziggo</a></p>   
-  <p></p>
-<p><a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443943091">Live item NL -> should be opened in Ziggo</a></p>
-<p><a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443942987/watch">Live item NL -> should be opened in Ziggo</a></p>
-<p><a href="https://www.horizon.tv/nl_nl/tv-gids/replay-asset.html/crid%3A~~2F~~2Fbds.tv~~2F144523905/wnl-opiniemakers/crid%3A~~2F~~2Fbds.tv~~2F227612161-imi%3A00100000007C921C/wnl-opiniemakers.html">https://www.horizon.tv/nl_nl/ Replay NL -> should be opened in Ziggo</a></p>
+<a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443942987/watch">Live item NL -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/nl_nl/tv-gids/replay-asset.html/crid%3A~~2F~~2Fbds.tv~~2F144523905/wnl-opiniemakers/crid%3A~~2F~~2Fbds.tv~~2F227612161-imi%3A00100000007C921C/wnl-opiniemakers.html">https://www.horizon.tv/nl_nl/ Replay NL -> should be opened in Ziggo</a><br>
     
-<p><a href="https://www.horizon.tv/nl_nl/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000509232/101-dalmatians-hd/crid%3A~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000509232/101-dalmatians-hd.html/watch#182">https://www.horizon.tv/nl_nl/ Movie-{my-prime}/{type}/{mediagroup}/watch -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/nl_nl/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000509232/101-dalmatians-hd/crid%3A~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000509232/101-dalmatians-hd.html/watch#182">https://www.horizon.tv/nl_nl/ Movie-{my-prime}/{type}/{mediagroup}/watch -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000509232/101-dalmatians-hd/crid%3A~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000509232/101-dalmatians-hd.html">https://www.horizon.tv/nl_nl/ Movie-{my-prime}/{type}/{mediagroup} -> should be opened in Ziggo</a><br>
 
-<p><a href="https://www.horizon.tv/nl_nl/my-prime/tv-asset.html/crid%3A~~2F~~2Fupc.com~~2F065572c2-b4b3-40ad-8aff-7862735c6f35/guardian-the/crid%3A~~2F~~2Fupc.com~~2F37500~~2FAZIA1000000000291987/pilot.html">https://www.horizon.tv/nl_nl/ My prime series-/{mediagroup}/{name} -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/nl_nl/my-prime/tv-asset.html/crid%3A~~2F~~2Fupc.com~~2F065572c2-b4b3-40ad-8aff-7862735c6f35/guardian-the/crid%3A~~2F~~2Fupc.com~~2F37500~~2FAZIA1000000000291987/pilot.html">https://www.horizon.tv/nl_nl/ My prime series-/{mediagroup}/{name} -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/my-prime/tv-asset.html/crid%3A~~2F~~2Fupc.com~~2F065572c2-b4b3-40ad-8aff-7862735c6f35/guardian-the/crid%3A~~2F~~2Fupc.com~~2F37500~~2FAZIA1000000000291987/pilot.html/watch#249">https://www.horizon.tv/nl_nl/ My prime series-/{mediagroup}/{name}/watch -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/my-prime/tv-asset.html/crid%3A~~2F~~2Fupc.com~~2F065572c2-b4b3-40ad-8aff-7862735c6f35/guardian-the">https://www.horizon.tv/nl_nl/ My prime series-/{mediagroup}--> should be opened in Ziggo</a><br>
-<a href="https://www.horizon.tv/nl_nl/my-prime/tv-asset.html/crid%3A~~2F~~2Fupc.com~~2F065572c2-b4b3-40ad-8aff-7862735c6f35/guardian-the/watch#249">https://www.horizon.tv/nl_nl/ My prime series-/{mediagroup}/watch#249 -> should be opened in Ziggo</a><br></p>
+<a href="https://www.horizon.tv/nl_nl/my-prime/tv-asset.html/crid%3A~~2F~~2Fupc.com~~2F065572c2-b4b3-40ad-8aff-7862735c6f35/guardian-the/watch#249">https://www.horizon.tv/nl_nl/ My prime series-/{mediagroup}/watch#249 -> should be opened in Ziggo</a><br>
 
 <a href="https://www.horizon.tv/nl_nl/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000274621/marie-antoinette.html/watch-trailer#26">https://www.horizon.tv/nl_nl/ My prime trailer /watch type WITH [#offset] to (Marie Antoinette -> should be opened in Ziggo</a><br></p>
 
@@ -148,84 +148,78 @@ Indirectly Mobile deeplinks can be tested by p.1-a </p></h5>
 <p><a href="https://www.horizon.tv/nl_nl/tv-gids/replay-asset.html/crid%3A~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-0000000067BC/how-i-met-your-mother/crid%3A~~2F~~2Fbds.tv~~2F6022242-imi%3A00100000006ADFD5/game-night.html/watch#145">https://www.horizon.tv/nl_nl/ /{tv-guide}/replay-asset.html/{mediagroup}/{name}/watch -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/tv-gids/replay-asset.html/crid%3A~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-0000000067BC/how-i-met-your-mother/crid%3A~~2F~~2Fbds.tv~~2F6022242-imi%3A00100000006ADFD5/game-night.html">https://www.horizon.tv/nl_nl/ /{tv-guide}/replay-asset.html/{mediagroup}/{name} -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/tv-gids/replay-asset.html/crid%3A~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-0000000067BC/how-i-met-your-mother.html/watch#145">https://www.horizon.tv/nl_nl/ /{tv-guide}/replay-asset.html/{mediagroup}/watch -> should be opened in Ziggo</a>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The newest episode of the replay asset starts playing</h5><br>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The newest episode of the replay asset starts playing<br>
 
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>https://www.horizon.tv/nl_nl/The newest episode of the replay asset starts playing</h5><br>
-<a href="https://www.horizon.tv/nl_nl/tv-gids/replay-asset.html/crid%3A~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-0000000067BC/how-i-met-your-mother.html"> /{tv-guide}/replay-asset.html/{mediagroup} -> should be opened in Ziggo</a><br></p>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>https://www.horizon.tv/nl_nl/The newest episode of the replay asset starts playing<<br>
+<a href="https://www.horizon.tv/nl_nl/tv-gids/replay-asset.html/crid%3A~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-0000000067BC/how-i-met-your-mother.html"> /{tv-guide}/replay-asset.html/{mediagroup} -> should be opened in Ziggo</a><br>
 
-<p><a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443943014/1468844460000">https://www.horizon.tv/nl_nl/ TV guide-STARTOVER-ON NOW asset -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443943014/1468844460000">https://www.horizon.tv/nl_nl/ TV guide-STARTOVER-ON NOW asset -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443943014">https://www.horizon.tv/nl_nl/ TV guide-STARTOVER-ON NOW asset---w/o TIMEstamp -> should be opened in Ziggo</a><br>
-<a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443943014/1468844460000/watch">https://www.horizon.tv/nl_nl/ TV guide-ON NOW asset-STARTOVER-with TIMEstamp-watch -> should be opened in Ziggo</a><br></p>
+<a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443943014/1468844460000/watch">https://www.horizon.tv/nl_nl/ TV guide-ON NOW asset-STARTOVER-with TIMEstamp-watch -> should be opened in Ziggo</a><br>
 
 <p><a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/672816167173/1469443800000/record">https://www.horizon.tv/nl_nl/ RECORDED---ON TV future /record -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/672816167173/1469443800000">https://www.horizon.tv/nl_nl/ ON TV future -> should be opened in Ziggo</a><br>
-<a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/672816167173">https://www.horizon.tv/nl_nl/ ON TV future w/o time stamp -> should be opened in Ziggo</a><br></p>
+<a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/672816167173">https://www.horizon.tv/nl_nl/ ON TV future w/o time stamp -> should be opened in Ziggo</a><br>
 
-<p><a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443942983/1468941000000/record">https://www.horizon.tv/nl_nl/ RECORDED-ON TV future /record -> should be opened in Ziggo</a><br></p>
-
-<p><a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000338065/star-wars-the-force-awakens.html/watch-trailer">https://www.horizon.tv/nl_nl/ trailer from ticket -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/nl_nl/tv-kijken/live-channel.html/24443942983/1468941000000/record">https://www.horizon.tv/nl_nl/ RECORDED-ON TV future /record -> should be opened in Ziggo</a><br>
+<a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000338065/star-wars-the-force-awakens.html/watch-trailer">https://www.horizon.tv/nl_nl/ trailer from ticket -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347701/lady-in-the-van-the.html/watch-trailer#0">https://www.horizon.tv/nl_nl/ trailer1 from the beginning -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347701/lady-in-the-van-the.html/watch-trailer#57">https://www.horizon.tv/nl_nl/ trailer1 with offset -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000355048/louder-than-bombs.html/watch-trailer#0">https://www.horizon.tv/nl_nl/ trailer2 from the beginning -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000355048/louder-than-bombs.html/watch-trailer#62">https://www.horizon.tv/nl_nl/ trailer2 with offset -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347669/gods-of-egypt.html/watch-trailer#0">https://www.horizon.tv/nl_nl/ trailer3 from the beginning -> should be opened in Ziggo</a><br>
-<a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347669/gods-of-egypt.html/watch-trailer#34">https://www.horizon.tv/nl_nl/ trailer3 with offset -> should be opened in Ziggo</a><br></p>
+<a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347669/gods-of-egypt.html/watch-trailer#34">https://www.horizon.tv/nl_nl/ trailer3 with offset -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347686/spotlight.html/watch-trailer#0">https://www.horizon.tv/nl_nl/ trailer4 from the beginning -> should be opened in Ziggo</a><br>
-<a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347686/spotlight.html/watch-trailer#49">https://www.horizon.tv/nl_nl/ trailer4 with offset -> should be opened in Ziggo</a><br></p>
+<a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347686/spotlight.html/watch-trailer#49">https://www.horizon.tv/nl_nl/ trailer4 with offset -> should be opened in Ziggo</a><br>
 <a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347707/pride-and-prejudice-and-zombies.html/watch-trailer#0">https://www.horizon.tv/nl_nl/ trailer5 from the beginning -> should be opened in Ziggo</a><br>
-<a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347707/pride-and-prejudice-and-zombies.html/watch-trailer#69">https://www.horizon.tv/nl_nl/ trailer5 with offset -> should be opened in Ziggo</a><br></p>
+<a href="https://www.horizon.tv/nl_nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000347707/pride-and-prejudice-and-zombies.html/watch-trailer#69">https://www.horizon.tv/nl_nl/ trailer5 with offset -> should be opened in Ziggo</a><br>
 
-<p>
-      <h5>HZN. Different countries.</h5>
-     <h5>Universal links</h5>
-<h6><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other countries</h6>
-<p><a href="https://www.horizon.tv/en_ch.html">https://www.horizon.tv/en_ch/ Home CH -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/en_ch/watch-tv.html">https://www.horizon.tv/en_ch/ watch-tv CH -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/en_ch/tv-guide.html">https://www.horizon.tv/en_ch/ tv-guide CH -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/en_ch/my-prime.html">https://www.horizon.tv/en_ch/ my-prime CH -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/en_ch/my-videos.html">https://www.horizon.tv/en_ch/ my-videos CH -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/en_ch/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000381599/flock-the-dunkle-triebe.html">https://www.horizon.tv/en_ch/ my-prime ITEM CH -> should be opened in HZN</a></p>
-<p></p>
-<p><a href="https://www.horizon.tv/en_ch/my-prime.html">https://www.horizon.tv/en_ch/ My prime CH -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/en_ch/watch-tv/live-channel.html/541614119263/watch">https://www.horizon.tv/en_ch/ Live channel CH -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/en_ch/tv-guide/replay-asset.html/crid%3A~~2F~~2Fbds.tv~~2F120673537/mein-idol-messi/crid%3A~~2F~~2Fbds.tv~~2F120673537-imi%3A0010000000BE0917/mein-idol-messi.html">https://www.horizon.tv/en_ch/ Replay CH -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/en_ch/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000369333/nightcrawler-jede-nacht-hat-ihren-preis-hd/crid%3A~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000369333/nightcrawler-jede-nacht-hat-ihren-preis-hd.html">https://www.horizon.tv/en_ch/ VOD item CH -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/de_de/maxdome/tv-asset.html/crid%3A~~2F~~2Funitymedia.de~~2F9381ab8f-ec75-4bf9-b84f-693bcdcd4150/stadt-land-mord/crid%3A~~2F~~2Funitymedia.de~~2F778868131000~~2FMXDSV100000000014399/stadt-land-mord.html">https://www.horizon.tv/de_de/ Maxdome item DE -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/de_de/live-sender.html">https://www.horizon.tv/de_de/watch tv DE -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/de_de/maxdome.html">https://www.horizon.tv/de_de/maxdome DE -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/de_de/myprime.html">https://www.horizon.tv/de_de/myprime DE -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/de_de/maxdome/movie-asset.html/crid%3A~~2F~~2Funitymedia.de~~2F778868131000~~2FMXDSV100000000213178/collateral/crid%3A~~2F~~2Funitymedia.de~~2F778868131000~~2FMXDSV100000000213178/collateral.html">https://www.horizon.tv/de_de/ Maxdome item-2 DE -> should be opened in HZN</a></p>
-<p><a href="https://www.horizon.tv/de_de/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000262519/survival-of-the-dead/crid%3A~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000262519/survival-of-the-dead.html">https://www.horizon.tv/de_de/ My prime DE/Survival of the Dead -> should be opened in HZN</a></p>
+      <b>HZN. Different countries.</b><br>
+     <b>Universal links</b><br>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other countries<br>
+<a href="https://www.horizon.tv/en_ch.html">https://www.horizon.tv/en_ch/ Home CH -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/en_ch/watch-tv.html">https://www.horizon.tv/en_ch/ watch-tv CH -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/en_ch/tv-guide.html">https://www.horizon.tv/en_ch/ tv-guide CH -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/en_ch/my-prime.html">https://www.horizon.tv/en_ch/ my-prime CH -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/en_ch/my-videos.html">https://www.horizon.tv/en_ch/ my-videos CH -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/en_ch/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000381599/flock-the-dunkle-triebe.html">https://www.horizon.tv/en_ch/ my-prime ITEM CH -> should be opened in HZN</a><br>
+
+<a href="https://www.horizon.tv/en_ch/my-prime.html">https://www.horizon.tv/en_ch/ My prime CH -> should be opened in HZN</a></p>
+<a href="https://www.horizon.tv/en_ch/watch-tv/live-channel.html/541614119263/watch">https://www.horizon.tv/en_ch/ Live channel CH -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/en_ch/tv-guide/replay-asset.html/crid%3A~~2F~~2Fbds.tv~~2F120673537/mein-idol-messi/crid%3A~~2F~~2Fbds.tv~~2F120673537-imi%3A0010000000BE0917/mein-idol-messi.html">https://www.horizon.tv/en_ch/ Replay CH -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/en_ch/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000369333/nightcrawler-jede-nacht-hat-ihren-preis-hd/crid%3A~~2F~~2Fupc.com~~2F6006~~2FCDPF2009000000369333/nightcrawler-jede-nacht-hat-ihren-preis-hd.html">https://www.horizon.tv/en_ch/ VOD item CH -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/de_de/maxdome/tv-asset.html/crid%3A~~2F~~2Funitymedia.de~~2F9381ab8f-ec75-4bf9-b84f-693bcdcd4150/stadt-land-mord/crid%3A~~2F~~2Funitymedia.de~~2F778868131000~~2FMXDSV100000000014399/stadt-land-mord.html">https://www.horizon.tv/de_de/ Maxdome item DE -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/de_de/live-sender.html">https://www.horizon.tv/de_de/watch tv DE -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/de_de/maxdome.html">https://www.horizon.tv/de_de/maxdome DE -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/de_de/myprime.html">https://www.horizon.tv/de_de/myprime DE -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/de_de/maxdome/movie-asset.html/crid%3A~~2F~~2Funitymedia.de~~2F778868131000~~2FMXDSV100000000213178/collateral/crid%3A~~2F~~2Funitymedia.de~~2F778868131000~~2FMXDSV100000000213178/collateral.html">https://www.horizon.tv/de_de/ Maxdome item-2 DE -> should be opened in HZN</a><br>
+<a href="https://www.horizon.tv/de_de/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000262519/survival-of-the-dead/crid%3A~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000262519/survival-of-the-dead.html">https://www.horizon.tv/de_de/ My prime DE/Survival of the Dead -> should be opened in HZN</a></p></h5>
   
-<h5><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ziggo</h5>
-<h5><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ziggo. Mobile Deeplinking ziggogo://nl/...</h5>
+<h5><p><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ziggo<br>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mobile Deeplinking ziggogo://nl/...<br>
 
-<p>
    <a href="ziggogo://nl/home">ziggogo://nl/ Home Page NL</a><br>
   <a href="ziggogo://nl/tvguide">ziggogo://nl/ TV-Guide Page</a><br>
   <a href="ziggogo://nl/watchtv">ziggogo://nl/ WatchTV Page</a><br>
   <a href="ziggogo://nl/myprime">ziggogo://nl/ Myprime Page</a><br>
   <a href="ziggogo://nl/ondemand">ziggogo://nl/ Ondemand Page</a><br>
   <a href="ziggogo://nl/myvideos">ziggogo://nl/ Myvideos Page</a><br>
-<p></p>
-  <p>
-  <h5>Ziggo. Wrong pages</h5>
+
+Wrong pages<br>
   <a href="ziggogo://nl/hame">Hame Page-incorrect adress</a><br>
   <a href="ziggogo://nl/fjg">fjg Page-incorrect adress</a><br>
 
-<h5>Ziggo.</h5>
-  <h5>Universal links:</h5>
-    <h5>https://www.ziggogo.tv/nl/...</h5>
-   <h5>https://www.ziggogo.tv/dl/nl/... [Redirect link]</h5>
+Universal links:<br>
+   https://www.ziggogo.tv/nl/...<br>
+   https://www.ziggogo.tv/dl/nl/... [Redirect link]<br>
 
-<a><p>https://www.ziggogo.tv/dl/nl/... [Redirect link]</a></p>
+https://www.ziggogo.tv/dl/nl/... [Redirect link]<br>
 <a href="https://www.ziggogo.tv/dl/nl/watchtv/station/24443942987/program/crid:~~2F~~2Fbds.tv~~2F198470434/listing/crid:~~2F~~2Fbds.tv~~2F229084392-imi:0010000000808F95">www.ziggogo.tv/dl/nl/ TV guide item</a><br>
   <a href="https://www.ziggogo.tv/dl/nl/myprime/show/crid:~~2F~~2Fupc.com~~2F17f2293c-94b0-4c17-9e17-c445aeb22629/season/crid:~~2F~~2Fupc.com~~2F7d48fccd-8bd3-4d6c-82c8-3d49e676f626/episode/crid:~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000379104">www.ziggogo.tv/dl/nl/ My prime item show</a><br>
   <a href="https://www.ziggogo.tv/dl/nl/myprime/group/crid:~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000232282/item/crid:~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000232282">www.ziggogo.tv/dl/nl/ My prime item</a><br>
 <a href="https://www.ziggogo.tv/dl/nl/myprime/group/crid:~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000322501/item/crid:~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000322501">www.ziggogo.tv/dl/nl/ My prime item movie</a><br>
 <a href="https://www.ziggogo.tv/dl/nl/ondemand/group/crid:~~2F~~2Fupc.com~~2F2c64257c-bde5-4f44-8ad7-cf8e75e97f5f/item/crid:~~2F~~2Fupc.com~~2F1010~~2FMMPK2009000000269635">ziggogo://nl/ on Demand item Page</a><br>
 
-<p>
    <a href="https://www.ziggogo.tv/nl/my-prime.html">https://www.ziggogo.tv/nl/ my-prime Page</a><br>
    <a href="https://www.ziggogo.tv/nl/tv-gids.html">https://www.ziggogo.tv/nl/ tv-gids Page</a><br>
   <a href="https://www.ziggogo.tv/nl/my-videos.html">https://www.ziggogo.tv/nl/ my-videos Page</a><br>
@@ -233,12 +227,10 @@ Indirectly Mobile deeplinks can be tested by p.1-a </p></h5>
   <a href="https://www.ziggogo.tv/nl/tv-kijken.html">https://www.ziggogo.tv/nl/ watch tv Page</a><br>
   <a href="https://www.ziggogo.tv/nl/my-prime/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000232282/broken-flowers.html">https://www.ziggogo.tv/nl/ My prime item</a><br>
   <a href="https://www.ziggogo.tv/nl/ondemand/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000364772/13-hours-the-secret-soldiers-of-benghazi/crid%3A~~2F~~2Fupc.com~~2F1010~~2FTLPK2009000000364772/13-hours-the-secret-soldiers-of-benghazi.html">https://www.ziggogo.tv/nl/ On demand item</a><br>
-  <a href="https://www.ziggogo.tv/nl/my-prime/tv-asset.html/crid%3A~~2F~~2Fupc.com~~2Ff5023296-8c62-4964-b095-7337f8d0dd8e/teenage-mutant-ninja-turtles/crid%3A~~2F~~2Fupc.com~~2F20350~~2FMTV_P_ABC286715-524023/teenage-mutant-ninja-turtles.html">ziggogo://nl/ My prime/nl/Teenage Mutant Ninja Turtles</a>
+  <a href="https://www.ziggogo.tv/nl/my-prime/tv-asset.html/crid%3A~~2F~~2Fupc.com~~2Ff5023296-8c62-4964-b095-7337f8d0dd8e/teenage-mutant-ninja-turtles/crid%3A~~2F~~2Fupc.com~~2F20350~~2FMTV_P_ABC286715-524023/teenage-mutant-ninja-turtles.html">ziggogo://nl/ My prime/nl/Teenage Mutant Ninja Turtles</a></p></h5>
    
-  <h5>Virgin</h5>
-<h5>Virgin. Mobile Deeplinking virgintv://ie/...</h5>
-
-<p>
+  <h5><p>Virgin<br>
+Mobile Deeplinking virgintv://ie/...<br>
    <a href="virgintv://ie/home">virgintv://ie/ Home Page NL</a><br>
   <a href="virgintv://ie/tvguide">virgintv://ie/ TV-Guide Page</a><br>
   <a href="virgintv://ie/watchtv">virgintv://ie/ WatchTV Page</a><br>
@@ -247,7 +239,6 @@ Indirectly Mobile deeplinks can be tested by p.1-a </p></h5>
   <a href="virgintv://ie/myvideos">virgintv://ie/ Myvideos Page</a><br>
    <a href="virgintv://ie/myvideeeeos">virgintv://ie/ Wrong - Myvideos Page</a><br>
    <a href="virgintv://ie/ondemuoand">virgintv://ie/ Wrong - Ondemand Page</a><br>
-  <p></p>
 
 <a href="virgintv://ie/watchtv/station/753737255297/program/crid:~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-000000004BA0/listing/crid:~~2F~~2Fbds.tv~~2F241083770-imi:00100000004B54D3">virgintv://ie/ live</a><br>
   <a href="virgintv://ie/watchtv/station/753737255195/program/crid:~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-00000000661F/listing/crid:~~2F~~2Fbds.tv~~2F129272142-imi:00100000004B37BF">virgintv://ie/ past</a><br>
@@ -259,21 +250,17 @@ Indirectly Mobile deeplinks can be tested by p.1-a </p></h5>
   
   <a href="virgintv://ie/watchtv/station/753737255322/program/crid:~~2F~~2Fbds.tv~~2F129484538/listing/crid:~~2F~~2Fbds.tv~~2F192395897-imi:001000000046E1D9">virgintv://ie/ TV guide item #1</a><br>
   <a href="virgintv://ie/watchtv/station/753737255332/program/crid:~~2F~~2Fbds.tv~~2F482945/listing/crid:~~2F~~2Fbds.tv~~2F482945-imi:001000000046CFA5">virgintv://ie/ TV guide item #2</a><br>
-      
 
-
-<p>
-  <h5>Virgin. Wrong pages</h5>
+ Wrong pages<br>
   <a href="virgintv://ie/hame">virgintv Hame Page-incorrect adress</a><br>
   <a href="virgintv://ie/wotchtv">virgintv wotchtv Page-incorrect adress</a><br>
 
 
-<h5>Virgin.</h5>
-<h5>Universal links:</h5>
-<h5>https://www.virginmediatv.ie/en;</h5>
-<h5>https://www.virginmediatv.ie/dl/ie/ [Redirect link]</h5>
+Universal links:<br>
+https://www.virginmediatv.ie/en;<br>
+https://www.virginmediatv.ie/dl/ie/ [Redirect link]<br>
   
- <p>https://www.virginmediatv.ie/dl/ie/ [Redirect link]</p>
+ https://www.virginmediatv.ie/dl/ie/ [Redirect link]<br>
   <a href="http://www.virginmediatv.ie/dl/ie/home">http://www.virginmediatv.ie/dl/ie/ Home Page NL</a><br>
   <a href="http://www.virginmediatv.ie/dl/ie/tvguide">http://www.virginmediatv.ie/dl/ie/ TV-Guide Page</a><br>
   <a href="http://www.virginmediatv.ie/dl/ie/watchtv">http://www.virginmediatv.ie/dl/ie/ WatchTV Page</a><br>
@@ -282,7 +269,6 @@ Indirectly Mobile deeplinks can be tested by p.1-a </p></h5>
   <a href="http://www.virginmediatv.ie/dl/ie/myvideos">http://www.virginmediatv.ie/dl/ie/ Myvideos Page</a><br>
    <a href="http://www.virginmediatv.ie/dl/ie/ondeiimand">http://www.virginmediatv.ie/dl/ie/ Wrong Ondemand Page</a><br>
   <a href="http://www.virginmediatv.ie/dl/ie/myhhvideos">http://www.virginmediatv.ie/dl/ie/ Wrong Myvideos Page</a><br>
- <p></p>
 
 <a href="https://www.virginmediatv.ie/dl/ie/watchtv/station/753737255297/program/crid:~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-000000004BA0/listing/crid:~~2F~~2Fbds.tv~~2F241083770-imi:00100000004B54D3">https://www.virginmediatv.ie/dl/ie Live</a><br>
   <a href="https://www.virginmediatv.ie/dl/ie/watchtv/station/753737255195/program/crid:~~2F~~2Feventis.nl~~2F00000000-0000-1000-0008-00000000661F/listing/crid:~~2F~~2Fbds.tv~~2F129272142-imi:00100000004B37BF">https://www.virginmediatv.ie/dl/ie past</a><br>
@@ -299,17 +285,15 @@ Indirectly Mobile deeplinks can be tested by p.1-a </p></h5>
   <a href="https://www.ziggogo.tv/dl/nl/myprime/group/crid:~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000232282/item/crid:~~2F~~2Fupc.com~~2F1010~~2FNSMY2009000000232282">www.ziggogo.tv/dl/nl/ My prime item</a><br>
 <a href="https://www.ziggogo.tv/dl/nl/myprime/group/crid:~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000322501/item/crid:~~2F~~2Fupc.com~~2F37500~~2FAZIA0000000000322501">www.ziggogo.tv/dl/nl/ My prime item movie</a><br>
 <a href="https://www.ziggogo.tv/dl/nl/ondemand/group/crid:~~2F~~2Fupc.com~~2F2c64257c-bde5-4f44-8ad7-cf8e75e97f5f/item/crid:~~2F~~2Fupc.com~~2F1010~~2FMMPK2009000000269635">ziggogo://nl/ on Demand item Page</a><br>
-</h4>
-</p>
 
-<p>https://www.virginmediatv.ie/en</p>
+https://www.virginmediatv.ie/en<br>
   <a href="https://www.virginmediatv.ie/en/movies-and-boxsets">https://www.virginmediatv.ie/ M-S landing page</a><br>
   <a href="https://www.virginmediatv.ie/en">https://www.virginmediatv.ie/Home landing page</a><br>
  <a href="https://www.virginmediatv.ie/en/live-channels">https://www.virginmediatv.ie/ Watch TV landing page</a><br>
   <a href="https://www.virginmediatv.ie/en/tv-guide">https://www.virginmediatv.ie/ TV guide landing page</a><br>
    <a href="https://www.virginmediatv.ie/en/ondemand">https://www.virginmediatv.ie/ Movies&Boxes landing page (OnDemand = M&Box sets/Providers</a><br>
   <a href="https://www.virginmediatv.ie/en/my-videos">https://www.virginmediatv.ie/ My videos landing page</a><br>
-  <p></p>
+
   <a href="https://www.virginmediatv.ie/en/movies-and-boxsets">https://www.virginmediatv.ie/en/M-S Page</a><br>
   <a href="https://www.virginmediatv.ie/en/movies-and-boxsets/tv-asset.html/crid%3A~~2F~~2Fupc.com~~2F73196d75-8618-46d5-ab32-e866290d314e/ep-01-banana-in-the-stone/crid%3A~~2F~~2Fupc.com~~2F186071~~2FPACK0000000000808300/ep-01-banana-in-the-stone">virgintv M-S item #1</a><br>
   <a href="https://www.virginmediatv.ie/en/live-channels/live-channel.html/753737255275/location/6651943228/1488196800000">virgintv TV guide item</a><br>
@@ -320,7 +304,7 @@ Indirectly Mobile deeplinks can be tested by p.1-a </p></h5>
   <a href="https://www.virginmediatv.ie/en/my-vidsfdfeos">https://www.virginmediatv.ie/ Wrong My videos landing page</a><br>
   <a href="https://www.virginmediatv.ie/en/movies-and-boxsets/movie-asset.html/crid%3A~~2F~~2Fupc.com~~2F7100~~2FIEMF2009000000242301/hurricane-season/crid%3A~~2F~~2Fupc.com~~2F7100~~2FIEMF2009000000242301/hurricane-season.html">https://www.virginmediatv.ie/en/ movies-and-boxsets item</a><br>
 <a href="https://www.virginmediatv.ie/en/myprime/show/crid:~~2F~~2Fupc.com~~2F8f633480-6e73-492f-9bff-fd9e0f181ac8/season/crid:~~2F~~2Fupc.com~~2F7b521e4b-1b43-4d05-ba2b-9a0deeabf908/episode/crid:~~2F~~2Fupc.com~~2F7100~~2FIEMP2009000000383725">https://www.virginmediatv.ie/en/ movies-and-boxsets item-2  s5 e2</a><br>
- <a href="https://www.virginmediatv.ie/en/ondemand/show/crid:~~2F~~2Fupc.com~~2Fb9316ee3-56b1-47db-b2dc-dc49164cb1aa/season/crid:~~2F~~2Fupc.com~~2Ff6384992-6807-4600-8b32-6e0b5c484b02/episode/crid:~~2F~~2Fupc.com~~2F7100~~2FIEMP2009000000383914">https://www.virginmediatv.ie/en/ On demand item-3  s3 e1</a><br>
+ <a href="https://www.virginmediatv.ie/en/ondemand/show/crid:~~2F~~2Fupc.com~~2Fb9316ee3-56b1-47db-b2dc-dc49164cb1aa/season/crid:~~2F~~2Fupc.com~~2Ff6384992-6807-4600-8b32-6e0b5c484b02/episode/crid:~~2F~~2Fupc.com~~2F7100~~2FIEMP2009000000383914">https://www.virginmediatv.ie/en/ On demand item-3  s3 e1</a></p></h5>
   
   
 
