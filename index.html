@@ -15,31 +15,33 @@
   <body>
     <div class="wrapper">
       <header>
-        <h3>List of useful links to test HZN and Branded app linkings</h3>
-        <h5><p>Mobile app proccessed:</h5>
-        <h5>- Deeplinks</h5>
-         <h5>- Universal links</h5></p>
+        <h3><b>List of useful links to test HZN and Branded app linkings</b></h3>
+       <p>Mobile app proccessed:<br>
+        - Universal deeplink<br>
+        - Mobile deeplinks</p>
           
-        <h5><p>1. Universal links:
-<h5>A. https://www.horizon.tv/en_ch/tv-guide.html</h5>
-[Should be opened via the app directly. No any additional technical dialog.
-Deeplinks are mapped on Universal links. It allows to open the app when a link is clicked, rather than driving to a website or to your app’s listing on the iOS App Store or Google Play.
-<h7>Technical restrictions?]</h7>
-<h6>Need to be tested to check: 
-- Deeplinking is implemented in the app;
-- Deeplinks are mapped on Universal links in right way;</h6>
+<p><b>1. Universal deeplinks [App Links]</b><br>
+a - Web deeplink - https://www.horizon.tv/en_ch/tv-guide.html {Android 6.0+} {iOs 9+}<br>
+[Open immediately app with intent if installed]<br>
+[Fall back to web link if not installed]<br>
+
+<b>Need to be tested to check:</b>
+- Deeplinking is implemented in the app;<br>
+- Deeplinks are mapped on Universal links in right way;<br>
+
+b - "Confirm"/"Redirect" link https://www.horizon.tv/dl/ch/tvguide<br>
+["Open with ... WEB/app (if installed)" dialog -> "Open app" / "Fall back to web link if not installed"]<br>
+      
+<b>Need to be tested to check:</b><br>
+- “Redirect” link process correctly via WEB (WEB dialog);<br>
+- “Redirect” link process correctly via the app<br>
+
+<b>2. Mobile deeplinks</b><br>
+[Open immediately app with intent if installed]<br>
+hgo://nl/tvguide<br>
+Indirectly Mobile deeplinks can be tested by p.1-a </p>
      
-<h5>B. https://www.horizon.tv/dl/ch/tvguide -Confirm/Redirect link-</h5>
-      [WEB dialog (“Open via the app/WEB” appears]
-<h6>Need to be tested to check: 
-- “Redirect” link process correctly via WEB (WEB dialog);
-- “Redirect” link process correctly via the app;</h6>
-    
-         <h5>2. Mobile deeplinks:</h5>
-hgo://nl/tvguide [Should be opened via the app directly. No any additional technical dialog]
-<h6>Indirectly Mobile deeplinks can be tested by p.1.</h6>
-        
-               <p class="view"><a href="https://github.com/TatsianaVasko">View My GitHub Profile</a></p>
+<p class="view"><a href="https://github.com/TatsianaVasko">View My GitHub Profile</a></p>
 
       </header>
       <section>
